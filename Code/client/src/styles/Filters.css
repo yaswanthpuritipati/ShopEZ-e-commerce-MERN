@@ -1,0 +1,13 @@
+.filters {
+  width: 220px;
+  padding: 2rem 1rem;
+  background: #f7f7f7;
+  border-right: 1px solid #eee;
+}
+.filters h3 {
+  margin-top: 0;
+}
+.filters strong {
+  display: block;
+  margin: 1rem 0 0.5rem 0;
+} 

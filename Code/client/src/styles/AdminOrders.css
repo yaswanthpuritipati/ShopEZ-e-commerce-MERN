@@ -1,0 +1,130 @@
+.adminorders-container {
+  max-width: 1100px;
+  margin: 3rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(79,70,229,0.08);
+  padding: 2.5rem 2rem 2rem 2rem;
+}
+.adminorders-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #232a34;
+  margin-bottom: 0.5rem;
+}
+.adminorders-divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, #ff9800 0%, #4f46e5 100%);
+  margin: 1.2rem 0 1.5rem 0;
+  border-radius: 2px;
+}
+.adminorders-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: flex-start;
+}
+.adminorders-card {
+  background: #f7f7f7;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(79,70,229,0.06);
+  padding: 1.5rem 1.2rem;
+  min-width: 320px;
+  flex: 1 1 350px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+.adminorders-card-header {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #232a34;
+  margin-bottom: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.adminorders-status-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+}
+.adminorders-status-select {
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  border: 1.5px solid #4f46e5;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4f46e5;
+  background: #fff;
+  outline: none;
+  transition: border 0.18s;
+}
+.adminorders-status-select:disabled {
+  background: #e0e0e0;
+  color: #888;
+}
+.adminorders-updating {
+  color: #888;
+  font-size: 0.95rem;
+  margin-left: 1rem;
+}
+.adminorders-total {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #232a34;
+  margin-bottom: 0.7rem;
+}
+.adminorders-total span {
+  color: #ff9800;
+  font-weight: 700;
+}
+.adminorders-products {
+  margin-top: 0.7rem;
+}
+.adminorders-products-title {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.adminorders-product-item {
+  font-size: 1rem;
+  color: #232a34;
+  margin-bottom: 0.2rem;
+}
+.adminorders-error {
+  color: #e53935;
+  font-size: 1rem;
+  margin: 1rem 0 0.5rem 0;
+  text-align: left;
+}
+.adminorders-unauth {
+  color: #e53935;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 3rem 0;
+}
+@media (max-width: 900px) {
+  .adminorders-grid {
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+  }
+  .adminorders-card {
+    min-width: 220px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .adminorders-container {
+    padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+  }
+  .adminorders-title {
+    font-size: 1.3rem;
+  }
+  .adminorders-card {
+    padding: 1rem 0.5rem;
+  }
+} 

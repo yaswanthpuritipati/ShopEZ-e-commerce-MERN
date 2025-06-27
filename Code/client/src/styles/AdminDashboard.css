@@ -1,0 +1,186 @@
+.admindash-container {
+  min-height: 100vh;
+  background: #232a34;
+  padding: 2.5rem 1rem 2rem 1rem;
+  color: #fff;
+}
+.admindash-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+.admindash-cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+.admindash-card {
+  background: #181d23;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+  width: 220px;
+  padding: 2rem 1.2rem 1.5rem 1.2rem;
+  text-align: center;
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+.admindash-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 24px rgba(255,152,0,0.13);
+}
+.admindash-card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.admindash-card-label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+.admindash-card-count {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+.admindash-card-btn {
+  display: inline-block;
+  background: #ff9800;
+  color: #232a34;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.18s;
+}
+.admindash-card-btn:hover {
+  background: #ffa726;
+  color: #232a34;
+}
+.admindash-banner-form-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+.admindash-banner-card {
+  background: #181d23;
+  color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  width: 100%;
+  max-width: 420px;
+}
+.admindash-banner-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.admindash-banner-divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, #ff9800 0%, #4f46e5 100%);
+  margin: 1.2rem 0 1.5rem 0;
+  border-radius: 2px;
+}
+.admindash-banner-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+.admindash-banner-input {
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  font-size: 1rem;
+  background: #232a34;
+  color: #fff;
+}
+.admindash-banner-input:focus {
+  border: 1.5px solid #ff9800;
+  outline: none;
+  background: #232a34;
+}
+.admindash-banner-upload {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+.admindash-banner-preview {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.admindash-banner-img {
+  max-width: 340px;
+  max-height: 140px;
+  border-radius: 10px;
+  border: 2px solid #ff9800;
+  margin-top: 8px;
+}
+.admindash-banner-btn {
+  background: #ff9800;
+  color: #232a34;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+.admindash-banner-btn:hover {
+  background: #ffa726;
+}
+.admindash-banner-msg {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.7rem 0.5rem;
+}
+.admindash-banner-msg.success {
+  background: #43a047;
+  color: #fff;
+}
+.admindash-banner-msg.error {
+  background: #e53935;
+  color: #fff;
+}
+.admindash-unauth {
+  color: #e53935;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 3rem 0;
+}
+@media (max-width: 900px) {
+  .admindash-cards-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .admindash-card {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+@media (max-width: 600px) {
+  .admindash-container {
+    padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+  }
+  .admindash-title {
+    font-size: 1.3rem;
+  }
+  .admindash-card {
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+  }
+  .admindash-banner-card {
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+  }
+  .admindash-banner-img {
+    max-width: 100%;
+    max-height: 80px;
+  }
+} 

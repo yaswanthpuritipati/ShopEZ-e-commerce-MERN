@@ -1,0 +1,136 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f74a4a;
+  padding: 15px 30px;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #232a34;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.search-bar {
+  flex: 1;
+  margin: 0 20px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  width: 50%;
+  font-size: 1rem;
+  background: #fff;
+  color: #232a34;
+}
+
+.header-search-btn {
+  background: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-left: 8px;
+  padding: 7px 10px 5px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background 0.18s;
+}
+.header-search-btn:hover {
+  background: #ffe0b2;
+}
+
+.header-btn {
+  background: #fff;
+  color: #4f46e5;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-left: 16px;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+  box-shadow: 0 2px 8px rgba(79,70,229,0.08);
+  text-decoration: none;
+  display: inline-block;
+}
+.header-btn.primary {
+  background: #6c2ff2;
+  color: #fff;
+}
+.header-btn.secondary {
+  background: #fff;
+  color: #232a34;
+}
+.header-btn:hover {
+  background: #ffe0b2;
+  color: #232a34;
+}
+.header-btn.primary:hover {
+  background: #4f46e5;
+  color: #fff;
+}
+
+.header-icon-btn {
+  background: none;
+  border: none;
+  margin-left: 16px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  color: #232a34;
+  transition: color 0.18s;
+}
+.header-icon-btn:hover {
+  color: #4f46e5;
+}
+
+.header-cart {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.header-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 7px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.header-admin {
+  margin-left: 12px;
+  font-size: 22px;
+  color: #232a34;
+  display: flex;
+  align-items: center;
+  transition: color 0.18s;
+}
+.header-admin:hover {
+  color: #4f46e5;
+}
+
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px 8px;
+  }
+  .search-bar {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .header-btn, .header-icon-btn {
+    margin-left: 8px;
+    padding: 8px 10px;
+    font-size: 0.95rem;
+  }
+}

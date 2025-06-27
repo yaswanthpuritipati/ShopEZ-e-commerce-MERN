@@ -1,0 +1,104 @@
+.adminusers-container {
+  max-width: 1100px;
+  margin: 3rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(79,70,229,0.08);
+  padding: 2.5rem 2rem 2rem 2rem;
+}
+.adminusers-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #232a34;
+  margin-bottom: 0.5rem;
+}
+.adminusers-divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, #ff9800 0%, #4f46e5 100%);
+  margin: 1.2rem 0 1.5rem 0;
+  border-radius: 2px;
+}
+.adminusers-table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+.adminusers-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+.adminusers-table th, .adminusers-table td {
+  padding: 0.9rem 0.7rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+}
+.adminusers-table th {
+  background: #f7f7f7;
+  font-weight: 600;
+}
+.adminusers-action-btn {
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: background 0.18s;
+  font-size: 1rem;
+}
+.adminusers-action-btn.promote {
+  background: #43a047;
+}
+.adminusers-action-btn.demote {
+  background: #e53935;
+}
+.adminusers-action-btn.delete {
+  background: #757575;
+}
+.adminusers-action-btn:hover {
+  opacity: 0.9;
+}
+.adminusers-error {
+  color: #e53935;
+  font-size: 1rem;
+  margin: 1rem 0 0.5rem 0;
+  text-align: left;
+}
+.adminusers-msg {
+  margin-top: 1rem;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.7rem 0.5rem;
+}
+.adminusers-msg.success {
+  background: #43a047;
+  color: #fff;
+}
+.adminusers-msg.error {
+  background: #e53935;
+  color: #fff;
+}
+.adminusers-unauth {
+  color: #e53935;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 3rem 0;
+}
+@media (max-width: 600px) {
+  .adminusers-container {
+    padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+  }
+  .adminusers-title {
+    font-size: 1.3rem;
+  }
+  .adminusers-table th, .adminusers-table td {
+    padding: 0.5rem 0.3rem;
+    font-size: 0.95rem;
+  }
+} 
